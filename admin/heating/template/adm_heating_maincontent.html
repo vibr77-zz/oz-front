@@ -1,0 +1,255 @@
+
+<div> 
+ 	<div class="nodetitle" id="nodetitle" data-i18n="Heating.Pleaseselectazonem">
+   		<div style="float:left; padding:8px;"><i class="fa fa-cog"></i>&nbsp;Heating Zone Details</div>
+   		<div style="float:right; line-height:40px; margin-right:15px">
+   			<a href="javascript:" class="js-addzone"><i class="fa fa-plus" style="font-size:20px"></i></a>&nbsp;
+   		</div>
+    	<div style="clear:both;"></div>
+	</div>
+	<div class="nodedetails" id="nodedetails">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"> <i class="fa fa-tags"></i>&nbsp;<span data-i18n="Heating.ZoneProperties">Zone properties</span><span style="float:right"><a href="javascript:" class="js-deletezone " data-toggle="tooltip" data-placement="top" data-i18n="[title]Automation.Run" title="delete current zone"><i class="fa fa-trash-o"></i></a></span></h3>
+			</div>
+			<div class="panel-body">
+				<div>
+					<div style="float:left; width: 20%;" data-i18n="Heating.Title">Zone Title</div>
+					<div style="float:left; width: 60%;"><span id="input_zone_label" class="input-large"></span>
+					<div style="clear:both;"></div>
+				</div>
+				<div>
+					<div>
+						<div style="float:left; width: 100%;"><br></div>
+					</div>
+					<div style="float:left; width: 20%;"> &nbsp;</div>
+					<div style="float:left; width: 80%;"> 
+						<button type="button" id="btnsubmitprop" class="btn btn-sm btn-primary js-save" data-i18n="Save">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title"><i class="fa fa-list"></i>&nbsp;<span data-i18n="Heating.listofvdevice">List of virtual devices</span></h3>
+	</div>
+	<div class="panel-body">
+		<div id="listofvdevice_content" />	
+		<div id="add" >
+			<div style="float:left;width:130px; margin-bottom:3px;"><span id="select_vdevice_add"></span></div>
+			<div style="float:left; margin-bottom:3px;">
+				<a type="button"  class="btn btn-sm btn-primary js-addvdevice" data-i18n="Add">Add</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title" ><i class="fa fa-clock-o"></i>&nbsp;<span data-i18n="Heating.ScheduleDetail">Schedule details</span></h3>
+	</div>
+	<div class="panel-body">
+		<div>
+		  	<div style="width: 100%;" align=center>
+			  	<div style="float:left; width:90px; ">
+			  		<a href="javascript:" class="btn btn-sm btn-default js-setmode-0" data-i18n="Heating.Off" style="width:70px;">Off</a>
+			  	</div>
+			  	<div style="float:left; width:90px; ">
+			  		<a href="javascript:" class="btn btn-sm btn-success js-setmode-1" data-i18n="Heating.Hg" style="width:70px;">Hors Gel</a>
+			  	</div>
+			  	<div style="float:left; width:90px; ">
+			  		<a href="javascript:" class="btn btn-sm btn-primary js-setmode-2" data-i18n="Heating.Eco" style="width:70px;">Eco</a>
+			  	</div>
+			  	<div style="float:left; width:90px; ">
+			  		<a href="javascript:" class="btn btn-sm btn-danger js-setmode-3" data-i18n="Heating.Confort" style="width:70px;">Confort</a>
+			  	</div>
+			<div style="clear:both;"></div>
+			<br>
+			</div>
+		  
+		  <div style="width: 100%; margin-bottom:100px" id="schedule_content">
+		  	
+			<div style="float:left; width: 50px; border-left:0px solid; border-right:0px solid;margin: 1px;">
+			  	<div align="center">&nbsp;</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">0h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">0h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">1h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">1h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">2h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">2h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">3h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">3h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">4h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">4h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">5h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">5h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">6h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">6h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">7h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">7h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">8h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">8h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">9h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">9h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">10h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">10h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">11h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">11h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">12h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">12h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">13h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">13h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">14h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">14h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">15h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">15h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">16h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">16h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">17h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">17h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">18h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">18h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">19h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">19h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">20h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">20h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">21h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">21h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">22h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">22h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			  	<div style="border:0px solid;margin-top:1px;">
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">23h00</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px; color:#B1B1B1;" align="right">23h30</div>
+			  		<div style="margin:1px; line-height:8px; font-size:8px;" align="right">&nbsp;</div>
+			  	</div>
+			</div>		  	
+
+		  	<div id="dow_1" style="float:left;width:70px;margin-left:3px;margin-right:3px;">
+		  		<div id="day_header_1" ><span>L</span><span style="float:right"> <a class="js-copy-1"><i class="fa fa-clipboard"></i></a>&nbsp;<a class="js-reset-1"><i alt="test" class="fa fa-eraser"></i></a></span></div>
+		  		<div id="day_schedule_content_1" style="border:1px solid; border-color:#c0c0c0;"></div>
+		  	</div>
+		  	<div id="dow_2" style="float:left;width:70px;margin-left:3px;">
+		  		<div id="day_header_2"><span>M</span><span style="float:right"> <a class="js-copy-2"><i class="fa fa-clipboard"></i></a>&nbsp;<a class="js-reset-2"><i class="fa fa-eraser"></i></a></span></div>
+		  		<div id="day_schedule_content_2" style="border:1px solid; border-color:#c0c0c0;"></div>
+		  	</div>
+		  	<div id="dow_3" style="float:left;width:70px;margin-left:3px;">
+		  		<div id="day_header_3"><span>M</span><span style="float:right"> <a class="js-copy-3"><i class="fa fa-clipboard"></i></a>&nbsp;<a class="js-reset-3"><i class="fa fa-eraser"></i></a></span></div>
+		  		<div id="day_schedule_content_3" style="border:1px solid; border-color:#c0c0c0;"></div>
+		  	</div>
+		  	<div id="dow_4" style="float:left;width:70px;margin-left:3px;">
+		  		<div id="day_header_4"><span>J</span><span style="float:right"> <a class="js-copy-4"><i class="fa fa-clipboard"></i></a>&nbsp;<a class="js-reset-4"><i class="fa fa-eraser"></i></a></span></div>
+		  		<div id="day_schedule_content_4" style="border:1px solid; border-color:#c0c0c0;"></div>
+		  	</div>
+		  	<div id="dow_5" style="float:left;width:70px;margin-left:3px;">
+		  		<div id="day_header_5"><span>V</span><span style="float:right"> <a class="js-copy-5"><i class="fa fa-clipboard"></i></a>&nbsp;<a class="js-reset-5"><i class="fa fa-eraser"></i></a></span></div>
+		  		<div id="day_schedule_content_5" style="border:1px solid; border-color:#c0c0c0;"></div>
+		  	</div>
+		  	<div id="dow_6" style="float:left;width:70px;margin-left:3px;">
+		  		<div id="day_header_6"><span>S</span><span style="float:right"> <a class="js-copy-6"><i class="fa fa-clipboard"></i></a>&nbsp;<a class="js-reset-6"><i class="fa fa-eraser"></i></a></span></div>
+		  		<div id="day_schedule_content_6" style="border:1px solid; border-color:#c0c0c0;"></div>
+		  	</div>
+		  	<div id="dow_7" style="float:left;width:70px;margin-left:3px;">
+		  		<div id="day_header_7"><span>D</span><span style="float:right"> &nbsp;<a class="js-reset-7"><i class="fa fa-eraser"></i></a></span></div>
+		  		<div id="day_schedule_content_7" style="border:1px solid; border-color:#c0c0c0;"></div>
+		  	</div>
+		  	<div style="clear:both;"></div>
+		  </div>
+         </div>
+	</div>
+    </div> 
+    </div>
+</div></div>

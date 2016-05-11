@@ -1,0 +1,44 @@
+<div id="popupView" style="width:300px; height: 350px; background-color: #222; display: none;" align=center>
+	<div>
+		<div id="colorpicker1" ></div>
+	</div>
+	<div >
+		<div style="float:left;margin-left:30px;color:#FFF;width:40px;">Red</div>
+		<div class="slider" id="slider-R" name="<%= device_id %>-38-1-R" style="float:left; margin: 5px 10px 5px 10px; width: 150px; height:7px; font-size:8px;">&nbsp;</div>
+		<div style="float:left;margin-left:5px;width:20px;color:#FFF"><span id="<%= device_id %>-val_RR"></span></div>
+		<div style="clear:both;"></div>
+	</div>
+	<div >
+		<div style="float:left;margin-left:30px;color:#FFF;width:40px;">Green</i></div>
+		<div class="slider" id="slider-G" name="<%= device_id %>-38-1-G" style="float:left; margin: 5px 10px 5px 10px; width: 150px; height:7px; font-size:8px;">&nbsp;</div>
+		<div style="float:left;margin-left:5px;width:20px;color:#FFF"><span id="<%= device_id %>-val_GG"></span></div>
+		<div style="clear:both;"></div>
+	</div>
+	<div >
+		<div style="float:left;margin-left:30px;color:#FFF;width:40px;">Blue</div>
+		<div class="slider" id="slider-B" name="<%= device_id %>-38-1-B" style="float:left; margin: 5px 10px 5px 10px; width: 150px; height:7px; font-size:8px;">&nbsp;</div>
+		<div style="float:left;margin-left:5px;width:20px;color:#FFF"><span id="<%= device_id %>-val_BB"></span></div>
+		<div style="clear:both;"></div>
+	</div>
+	<div >
+		<div style="float:left;margin-left:30px;width:40px;"><i class="fa fa-sun-o" style="color:#FFF"></i></div>
+		<div class="slider" id="slider-1" name="68-38-1-0" style="float:left; margin: 5px 10px 5px 10px; width: 150px; height:7px; font-size:8px;">&nbsp;</div>
+		<div style="float:left;margin-left:5px;width:20px;color:#FFF"><span id="<%= device_id %>-val_WW"></span></div>
+		<div style="clear:both;"></div>
+	</div>
+	<div >
+		<div style="float:left;margin-left:30px;width:40px;"><i class="fa fa-bolt" style="color:#FFF"></i></div>
+		<div class="slider" id="slider-2" name="<%= device_id %>-38-6-0" style="float:left; margin: 5px 10px 5px 10px; width: 150px; height:7px; font-size:8px;">&nbsp;</div>
+		<div style="float:left;margin-left:5px;width:20px;color:#FFF"><span id="<%= device_id %>-val_II"></span></div>
+		<div style="clear:both;"></div>
+	</div>
+	<div style="margin-top:10px;">
+		<input type="text" id="color1" style=" height:20px; font-size:8px;" />
+	</div>
+</div>
+
+<div id="leftdiv-<%= valueid %>" style="float:left; width: 100%; line-height:75px;margin-top:10px" align=center>
+	<a id="popupTrigger" rel="rgbw" class="js-rgbw" href="#popupView">
+		<img src="images/colorcube.png" height="70">
+	</a>
+</div>

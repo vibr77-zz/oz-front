@@ -1,0 +1,36 @@
+<div style="padding-top:10px;">
+	<div class="node" id="job0" style="display:block;">
+		<div class="nodetitle" data-i18n="Weather.Weather">Weather</div>
+		<div class="nodedetails" id="nodedetails" style="overflow: hidden; height:600px" >
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title" data-i18n="Weather.WeatherForecast">Weather forecast <%= city %></h3>
+				</div>
+				<div class="panel-body">
+					<div id="Forecast_panel">
+						<div align="center" >
+							<div style="float:left; width:50%" align=right>
+								<div style="padding-right:20px;">
+									<h2><i class=" weather icon-<%=code %>"></i><%=temp%>&deg;<%=units_temp%></h2>
+								</div>
+							</div>
+							<div style="float:left; width:50%" align=left>
+								<div><i class="fa fa-long-arrow-up"></i>&nbsp;Max <%= high %>&deg;<%=units_temp%> </div>
+								<div><i class="fa fa-long-arrow-down"></i>&nbsp;Min <%= low %>&deg;<%=units_temp%></div>
+								<div><i class="fa fa-sun-o">&nbsp;</i><%=sunrise %></div>
+								<div><i class="fa fa-moon-o">&nbsp;</i><%=sunset %></div>
+								<div><i class="fa fa-leaf"></i>&nbsp;<%=wind_direction%> <%=wind_speed%> <%=units_speed%></div>
+								<div><i class="fa fa-tint"></i>&nbsp;<%=humidity%> %</div>
+							</div>
+						</div>
+						<div style="clear:both;"></div>
+						<div>
+							<div id="forecastcoll" ></div>
+							
+						</div>
+				</div>
+			</div>
+			
+	    </div>
+	</div>
+</div>

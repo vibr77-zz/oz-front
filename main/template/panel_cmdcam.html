@@ -1,0 +1,8 @@
+<div id="popupView_cam_<%=cam_id%>" style="width:340px; padding:10px;height: 260px;background-color: #222; display: none;" align=center>
+	<img id="video_<%=cam_id%>" src="api/axis_ctr.php?type=<%=stream_type%>&cam_id=<%=cam_id%>&resolution=320x240" height=240 width=320/>
+</div>
+<div id="leftdiv-<%=cam_id%>" style="float:left; width: 100%; line-height:75px;margin-top:2px" align=center>
+	<div align=center>
+		<a id="popupTrigger_cam_<%=cam_id%>" rel="fancy<%=cam_id%>" class="js-popup" href="#popupView_cam_<%=cam_id%>" data-fancybox-cam_id="<%=cam_id%>"><img src="api/axis_ctr.php?type=picture&cam_id=<%=cam_id%>&resolution=160x120" height=70 width=70/></a>
+	</div>
+</div>

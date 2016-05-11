@@ -1,0 +1,20 @@
+<div id="block-<%=scene_item_id%>" >
+	<div class="gbws_yellow"style=" float:left; ">
+		
+		<div>
+			<i class="fa fa-clock-o"></i>
+			<select id="repetitive_time_event-<%=scene_item_id%>">
+				<option>Every</option>
+			</select>
+			<span id="repetitive_time_event-duration-value-<%= scene_item_id %>"></span>
+			<span id="repetitive_time_event-duration-unit-<%= scene_item_id %>">&nbsp;</span>	
+			<span style="float:right">
+					<a id="save-<%= scene_item_id %>" href="javascript:" style="color: #FFF;" class="js-save_scene_item">
+						<i style="color: #FFF;"  class="fa fa-floppy-o"></i>
+					</a>
+					<a id="delete-<%= scene_item_id %>"  href="javascript:" style="color: #FFF;" class="js-delete_scene_item">
+					<i style="color: #FFF;"  class="fa fa-remove"></i></a>
+			</span>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,65 @@
+<div> 
+ 	<div class="nodetitle" id="nodetitle" data-i18n="Scene.Pleaseselectascene">
+   		<div style="float:left; padding:8px;"><i class="fa fa-cog"></i>&nbsp;Scene properties</div>
+   		<div style="float:right; line-height:40px; margin-right:15px">
+   			<a href="javascript:" class="js-refresh_scene_details"><i class="fa fa-refresh " style:"font-size:20px"></i></a>&nbsp;
+   		</div>
+    	<div style="clear:both;"></div>
+	</div>
+<div class="nodedetails" id="nodedetails" style="overflow: hidden;" >
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Properties <%=label%><span style="float:right">&nbsp;<a alt="delete scene" href="javascript:" class="js-delete"><i class="fa fa-trash"></i></a></span></h3>
+		</div>
+		<div class="panel-body">
+			<div id="error-msg"></div>
+			<div>
+				<div style="float:left; width: 20%;" data-i18n="Automation.Title">Title</div>
+				<div style="float:left; width: 60%;">
+				<span id="input_scenetitle" class="input-large"></span><span id="error_label" class="err_msg"></span>
+				
+				</div>
+				
+				<div style="clear:both;"></div>
+			</div>
+			<div>
+				<div style="float:left; width: 20%;" data-i18n="Automation.Activity"> Activity</div>
+				<div style="float:left; width: 80%;">
+					<span id="cpn_chkbx_status" ></span>		
+				</div>
+				<div style="clear:both"></div>
+			</div>
+			<div>
+				<div style="float:left; width: 20%;" data-i18n="Automation.Register as menu item">Register as menu item</div>
+				<div style="float:left; width: 80%;">
+					<span id="cpn_chkbx_menuitem" ></span>		
+				</div>
+				<div style="clear:both"></div>
+			</div>
+			<div>
+				<div>
+					<div style="float:left; width: 100%;"><br></div>
+				</div>
+				<div style="float:left; width: 20%;"> &nbsp;</div>
+				<div style="float:left; width: 80%;"> 
+					<button type="button" id="btnsubmitprop" class="btn btn-small btn-primary js-save" data-i18n="Save">Save</button>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title" data-i18n="Automation.Activities">Activities&nbsp;<span style="float:right"><a href="javascript:" class="js-play_scene" alt="play scene"><i class="fa fa-play"></i></a>&nbsp;<a href="javascript:" class="js-refresh_scene_details"><i class="fa fa-refresh"></i></a></span></h3>
+
+		</div>
+		<div class="panel-body">
+			<div>
+				<div id="error_item-msg" style="width: 100%;"></div>
+				<div style="float:left; width: 100%; margin-bottom:300px" id="activities_content"></div>
+			</div> 
+		</div>
+	</div>
+</div>
+</div>

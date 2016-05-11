@@ -1,0 +1,9 @@
+<div id="leftdiv-<%= valueid %>" style="float:left; width: 33%; line-height:75px;margin-top:10px" align=center>									
+	<img id="imgleft-<%= valueid %>" class="bulb" src="<%= img %>"  width=50 alt=""/>
+</div>
+<div style="float:right; width: 60%; line-height:75px;margin-top:10px" id="rightdiv-<%= valueid %>" align=left>
+	<span style="vertical-align:middle;  display: table-cell; line-height:normal;">
+	<span><%= name %><br></span>
+	<span id="value-<%= valueid %>"><%= value %></span>&nbsp;
+	<%= units_display %><span style="color:#555"><br><i class="fa fa-clock-o"></i>&nbsp;<%= last_event_ts %></span></span>
+</div>

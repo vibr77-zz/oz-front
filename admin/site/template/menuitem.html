@@ -1,0 +1,21 @@
+<li id="li<%=floor_id%>">
+	<div style="float:left; width:70%; background-color:<%= back_color %>">
+		<a href="javascript:" class="js-select"><%=title %></a>
+	</div>
+	<div style="float:left; width:30%; ; background-color:<%= back_color %>" class="job">
+		<div style="float:left; width:25%" >
+			<a class="js-add_room" style="padding:2px;padding-top:12px;padding-bottom:12px;padding-right:5px;" href="javascript:" data-toggle="tooltip" data-placement="top" data-i18n="[title]Sites.Addnewzone" title="Add new zone"><i class="fa fa-plus"></i></a>
+		</div>
+		<div style="float:left; width:25%" >
+			<a class="js-moveup" style="padding:2px;padding-top:12px;padding-bottom:12px" href="javascript:" data-toggle="tooltip" data-placement="top" data-i18n="[title]Sites.floormoveup" title="Move this zone UP"><i class="fa fa-caret-up"></i></a>
+		</div>
+		<div style="float:left; width:25%">
+			<a class="js-movedown" style="padding:2px;padding-top:12px;padding-bottom:12px" href="javascript:" data-toggle="tooltip" data-placement="top" data-i18n="[title]Sites.floormovedown" title="Move this floor DOWN"><i class="fa fa-caret-down"></i></a>
+		</div>
+		<div style="float:left; width:25%;">
+			<a class="js-delete" style="padding:2px;padding-top:12px;padding-bottom:12px" href="javascript:" data-toggle="tooltip" data-placement="top" data-i18n="[title]Sites.deletethiszone" title="Delete this floor"><i class="fa fa-remove"></i></a>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div id="ul_<%=floor_id%>"></div>
+</li>

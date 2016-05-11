@@ -1,0 +1,74 @@
+<form class="form-device-info" >
+<div class="panel panel-default">
+  <div class="panel-heading">
+    
+    <h3 class="panel-title"><i class="fa fa-tags"></i>&nbsp;<span data-i18n="Device.Properties">Properties</span><span style="float:right"><a href="javascript:" class="js-RefreshNodeInfo" data-toggle="tooltip" data-placement="top" data-i18n="[title]Automation.Run" title="RefreshNodeInfo"><i class="fa fa-eyedropper"></i></a>
+    </span></h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <div style="float:left; width: 30%;" data-i18n="Device.Id">ID</div>
+        <div style="float:left; width: 70%;">
+          <input type="text" style="margin-top:3px" id="nodeid" name="Node" size="3" disabled="true" value="<%=device_id%>"/>
+        </div>
+      </div>
+      <div >
+        <div style="float:left; width: 30%;" data-i18n="Device.Type">Type</div>
+        <div style="float:left; width: 70%;">
+          <input type="text" style="margin-top:3px"  id="nodetype" disabled="true" size="50"  value="<%= type %>"/></div>
+       <div style="clear:both;"></div>
+      </div>
+      <div>
+        <div style="float:left; width: 30%;" data-i18n="Device.Name">Device Name</div>
+        <div style="float:left; width: 70%;">
+          <input type="text" style="margin-top:3px" id="nodename" name="NodeName" value="<%=name%>"/></div>
+       <div style="clear:both;"></div>
+      </div>
+      <div>
+        <div style="float:left; width: 30%;" data-i18n="Device.Showincontrol">Show in control</div>
+        <div style="float:left; width: 70%;">
+          <input type="checkbox" style="margin-top:3px" id="visible" name="visible" value="1" <%=visible_checkbox%>/>
+        </div>
+       <div style="clear:both;"></div>
+      </div>
+      <div>
+        <div style="float:left; width: 30%;" data-i18n="Device.Location">Location</div>
+        <div style="float:left; width: 70%;" id="nodelocation">
+         
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+      <div>
+        <div style="float:left; width: 30%;" data-i18n="Device.Icon">Icon</div>
+        <div style="float:left; width: 70%;" id="nodeimage">
+          
+        </div>
+         <div style="clear:both;"></div>
+      </div>
+      <div>
+        <div style="float:left; width: 30%;">&nbsp;</div>
+        <div style="float:left; width: 70%;">
+          <div style=" height: 75px; width: 75px; border: 1px solid gray; display: table-cell; vertical-align: middle; margin-top:3px; " align=center>
+            <img style="margin-top:3px" src="<%=nodeimage%>" height=48px id="imgDevices" align=absmiddle>
+          </div>
+        </div>
+         <div style="clear:both;"></div>
+      </div>
+      <div>
+        <div style="float:left; width: 100%;"><br></div>
+      </div>
+      <div>
+        <div style="float:left; width: 30%;">&nbsp;</div>
+        <div style="float:left; width: 70%;">
+          <input type="hidden" name="Node" value="<%=device_id%>"/>
+          <input type="hidden" name="Operation" value="UpdateNodeInfo"/>
+          <button id="btnsubmitprop" class="btn btn-sm btn-primary" data-i18n="Device.Sendupdates">Send Updates</button>
+        </div>
+         <div style="clear:both;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+<div id="detailinfo"></div> 

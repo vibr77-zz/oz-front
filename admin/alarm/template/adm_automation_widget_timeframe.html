@@ -1,0 +1,39 @@
+<div id="block-<%= scene_item_id %>" >
+	<div class="gbws_red" style=" float:left; ">
+		<div style="float:left; padding-top:2px;"><select id="TF"><option>Timeframe</option></select></div>
+		<div style="float:left; padding-left:10px;">
+			<div>
+				<span id="cpn_chkbox_1-<%= scene_item_id %>"></span>
+				<span id="cpn_chkbox_2-<%= scene_item_id %>"></span>
+				<span id="cpn_chkbox_3-<%= scene_item_id %>"></span>
+				<span id="cpn_chkbox_4-<%= scene_item_id %>"></span>
+				<span id="cpn_chkbox_5-<%= scene_item_id %>"></span>
+				<span id="cpn_chkbox_6-<%= scene_item_id %>"></span>
+				<span id="cpn_chkbox_7-<%= scene_item_id %>"></span>&nbsp;	   
+				<span style="float:right">
+					<a id="save-<%= scene_item_id %>" href="javascript:" style="color: #FFF;" class="js-save_scene_item">
+						<i class="fa fa-floppy-o"></i>
+					</a>
+					<a id="delete-<%= scene_item_id %>"  href="javascript:" style="color: #FFF;" class="js-delete_scene_item"><i class="fa fa-remove"></i></a>
+				</span>
+			</div>
+				<div>from :
+					<span id="cpn_select_sh-<%= scene_item_id %>" ></span>:
+					<span id="cpn_select_sm-<%= scene_item_id %>" ></span>
+					to : 
+					<span id="cpn_select_eh-<%= scene_item_id %>" ></span>:
+					<span id="cpn_select_em-<%= scene_item_id %>" ></span>
+				</div>
+			
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div style="float:left" class="gbws_red">
+		<span style="height:30px; top:0px; vertical-align:middle;" >
+			<i class="fa fa-chevron-circle-right"></i>
+		</span>
+	</div>
+	<div id="block-content-<%= scene_item_id %>" class="gbws_red_emtpy"style=" float:left; ">
+		<div style="float:left" id="right-<%= scene_item_id %>"></div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<div style="float:left;width:180px;"><%= title %></div>
+<div style="float:left;width:130px;margin-bottom:3px;">
+	<div class="btn-group">
+		<button type="button" class="btn <%= btn_mode_type %> dropdown-toggle" data-toggle="dropdown">
+			<%= btn_mode_txt %>&nbsp;<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+		<li><a class="js-setmode_0">Off</a></li>
+		<li class="divider"></li>
+		<li><a class="js-setmode_1">Automatic</a></li>
+		<li><a class="js-setmode_2">Manual</a></li>
+	</ul>
+	</div>
+</div>
+<div style="float:left;width:130px;margin-bottom:3px;">
+	<div class="btn-group" id="status_<%=zone_id%>">
+		<button type="button" id="btn_status_<%=zone_id%>" class="btn <%= btn_type %> dropdown-toggle" data-toggle="dropdown">
+			<%= btn_txt %>&nbsp;<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a class="js-setstatus_0">Off</a></li>
+			<li class="divider"></li>
+			<li><a class="js-setstatus_1">Hors gel</a></li>
+			<li><a class="js-setstatus_2">Eco</a></li>
+			<li><a class="js-setstatus_3">Confort</a></li>
+		</ul>
+	</div>
+</div>
+<div style="clear:both;"></div>

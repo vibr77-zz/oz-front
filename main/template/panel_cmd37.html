@@ -1,0 +1,16 @@
+<div id="leftdiv-<%= valueid %>" style="float:left; width: 33%; line-height:75px;margin-top:10px;" align=center>									
+	<img class="bulb" id="imgOff-<%= valueid %>" src="<%= img_on %>"  width=60 alt=""/>
+	<!--<img class="bulb" id="imgOn-<%= valueid %>" src="<%= img_off %>" width=60 alt="" style="display:none;">-->
+	<span id="lblLevel-<%= valueid %>" class="level" style="display: none;">0</span>
+	<input type="hidden" n id="type-<%= valueid %>" class="type" value="<%= type %>"/>	
+</div>
+<div style="float:right; width: 33%; line-height:75px;margin-top:10px;" id="rightdiv-<%= valueid %>" align=center>
+	<div style="line-height: 10px;">
+		<button class="btn btn-xs  <%= buttonOn_class %> js-setOn" type="button">ON</button>
+		<!--<input type="button" id="btnOn-<%= valueid %>" class="<%= buttonOn_class %> js-setOn"  style="width: 44px; margin: 3px;"/>-->
+	</div>
+	<div style="line-height: 10px;">
+		<button class="btn btn-xs  <%= buttonOff_class %> js-setOff" type="button">OFF</button>
+		<!--<input type="button" id="btnOff-<%= valueid %>" class="<%= buttonOff_class %>  js-setOff"  style="width: 44px; margin: 3px;"/>-->
+	</div>
+</div>

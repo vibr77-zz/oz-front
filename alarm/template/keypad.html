@@ -1,0 +1,80 @@
+<div>
+	<div>
+		<div>
+			<div style="float:left;width:180px;" data-i18n="Alarm.Mode">Mode</div>
+			<div style="float:left;width:130px;" id="alarmmode">
+				<div class="btn-group">
+	  				<button type="button" class="btn <%=mode_btn_type %> dropdown-toggle">
+	    				<%= mode_btn_txt %>
+					</button>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<br>
+	<div id="Statuspanel">	
+		<div>
+			<div style="float:left;width:180px;" data-i18n="Alarm.Securitycode">SECURITY CODE</div>
+			<div style="float:left;width:400px;" id="code_div"><input name="code" style="width:306px;" id="code" type="password" value="<%= alarm_code %>" />					
+		</div>
+		<div style="clear:both;"></div>
+		<div>
+			<div style="float:left;width:180px;" data-i18n="Hea">&nbsp;</div>
+			<div style="float:left;width:400px;" id="keypad">
+				<div id="keypad">
+					<div >
+						<div class="digits js-d1" id="d-1">
+							<p><strong>1</strong></p>
+						</div>
+						<div class="digits js-d2" id="d-2">
+							<p><strong>2</strong><sup>abc</sup></p>
+						</div>
+						<div class="digits js-d3" id="d-3">
+							<p><strong>3</strong><sup>def</sup></p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div >
+						<div class="digits js-d4" id="d-4">
+							<p><strong>4</strong><sup>ghi</sup></p>
+						</div>
+						<div class="digits js-d5" id="d-5">
+							<p><strong>5</strong><sup>jkl</sup></p>
+						</div>
+						<div class="digits js-d6" id="d-6">
+							<p><strong>6</strong><sup>mno</sup></p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div >
+						<div class="digits js-d7" id="d-7">
+							<p><strong>7</strong><sup>pqrs</sup></p>
+						</div>
+						<div class="digits js-d8" id="d-8">
+							<p><strong>8</strong><sup>tuv</sup></p>
+						</div>
+						<div  class="digits js-d9" id="d-9">
+							<p><strong>9</strong><sup>wxyz</sup></p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div >
+						<div class="digits js-dd">
+							<p><strong>DEL</strong></p>
+						</div>
+						<div class="digits js-d0">
+							<p><strong>0</strong><sup>+</sup></p>
+						</div>
+						<div class="digits pad-action js-da">
+							<p><strong>OK</strong></p>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+			</div>	
+		</div>	 	 
+	</div>	
+</div>
+</div>
+  

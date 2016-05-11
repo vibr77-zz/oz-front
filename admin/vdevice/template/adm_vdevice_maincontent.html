@@ -1,0 +1,98 @@
+<div> 
+  <div class="nodetitle" id="nodetitle">
+    <div style="float:left; padding:8px;"><i class="fa fa-magic"></i>&nbsp;<span class="nodetitle" data-i18n="Vdevice.Vdevicesettings">Virtual device settings</span></div>
+      <div style="float:right; line-height:40px; margin-right:15px">
+        <a href="javascript:" class="js-refresh">
+          <i class="fa fa-refresh " style:"font-size:20px"></i>
+        </a>&nbsp;
+      </div>
+    <div style="clear:both;"></div>
+  </div>
+  <div class="nodedetails" id="nodedetails" style="overflow: hidden;" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+       <h3 class="panel-title">Properties <%=title%><span style="float:right">&nbsp;<a  href="javascript:" class="js-delete"><i class="fa fa-trash"></i></a></span></h3>
+      </div>
+      <div class="panel-body">
+       <div>
+          <div id="error-msg"></div>
+        <div>
+          <div style="float:left; width: 40%;" data-i18n="Vdevice.label">Device label</div>
+          <div style="float:left; width: 60%;"><span id="input_vdevice_label" class="input-large"></span></div>
+          <div style="clear:both;"></div>
+        </div>
+
+        <div>
+          <div style="float:left; width: 40%;" data-i18n="Device.Id">ID</div>
+          <div style="float:left; width: 60%;"><span id="input_vdevice_id" class="input-large"></span></div>
+          <div style="clear:both;"></div>
+        </div>
+        
+        <div>
+          <div style="float:left; width: 40%;" data-i18n="Device.Showincontrol">Show in control</div>
+          <div style="float:left; width: 60%;"><span id="chkbox_vdevice_sic" class="input-large"></span></div>
+          <div style="clear:both;"></div>
+        </div> 
+
+        <div>
+          <div style="float:left; width: 40%;" data-i18n="Device.Location">Location</div>
+          <div style="float:left; width: 60%;"><span id="select_vdevice_location" class="input-large">&nbsp;</span></div>
+          <div style="clear:both;"></div>
+        </div>
+          <div>
+          <div style="float:left; width: 40%;" data-i18n="Device.Location">Widget type</div>
+          <div style="float:left; width: 60%;"><span id="select_widget_type" class="input-large">&nbsp;</span></div>
+          <div style="clear:both;"></div>
+        </div>
+
+        <div>
+          <div style="float:left; width: 40%;" data-i18n="Device.Icon">Icon</div>
+          <div style="float:left; width: 60%;"><span id="select_vdevice_image" class="input-large"> </span></div>
+         <div style="clear:both;"></div>
+       </div>
+
+
+       <div>
+        <div style="float:left; width: 40%;">&nbsp;</div>
+        <div style="float:left; width: 55%;margin-top:5px;">
+          <div style=" height: 75px; width: 75px; border: 1px solid gray; display: table-cell; vertical-align: middle; margin-top:3px; " align=center>
+            <img style="margin-top:3px" src="<%=nodeimage%>" height=48px id="imgDevices" align=absmiddle></div>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+        <div>
+          <div style="float:left; width: 100%;"><br></div>
+           <div style="clear:both;"></div>
+        </div>
+        <div>
+          <div style="float:left; width: 40%;">&nbsp;</div>
+          <div style="float:left; width: 60%;">
+
+           <a href="javascript:" id="btnsubmitprop" class="btn btn-sm btn-primary js-save" data-i18n="VDevice.Save">Save</a>
+
+         </div>
+         <div style="clear:both;"></div>
+
+       </div>
+     </div>
+   </div>
+</div>
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title" data-i18n="Device.VirtualDeviceStatelist">Virtual Device State list<span style="float:right">&nbsp;<a class="js-add_state" style="padding:2px;padding-top:10px;padding-bottom:10px;padding-right:5px;" href="javascript:"><i class="fa fa-plus"></i></a>&nbsp;<a  href="javascript:" class="js-state-refresh"><i class="fa fa-refresh"></i></a></span></h3>
+    </div>
+    <div class="panel-body" >
+      <div id="error_state-msg"></div>
+      <div id="div_state_list"></div>
+    </div>
+  </div>
+  <div id="state_detail" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title" data-i18n="Device.StatesDetails">State details<span style="float:right"><a href="javascript:" class="js-play_state" alt="play scene"><i class="fa fa-play"></i></a>&nbsp;<a  href="javascript:" class="js-activities-refresh"><i class="fa fa-refresh"></i></a></span></h3>
+
+    </div>
+    <div class="panel-body" >
+     <div id="error_item-msg"></div>
+     <div id="activities_content"></div>
+    </div>
+  </div>
