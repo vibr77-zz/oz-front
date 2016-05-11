@@ -12,7 +12,6 @@ define(["app"], function(MyApp){
 				facebook_account:null,
 				instagram_account:null,
 				dropbox_account:null
-
 			}
 		});
 
